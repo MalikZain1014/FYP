@@ -1,0 +1,117 @@
+.signupContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  width: 100%;
+  background-color: aliceblue;
+  height: 100%; /* Set the parent container height to 100% */
+  overflow: hidden;
+}
+
+.image_Container_signup {
+  height: 100%;
+  display: flex; /* Add display: flex */
+  align-items: center; /* Vertically align content */
+}
+
+.singup_form_image {
+  background-size: cover;
+  object-fit: cover;
+  background-position: center;
+  width: 100%;
+  height: auto; /* Change the image height to auto */
+  max-height: 100%; /* Set max-height to 100% */
+}
+
+.context_Container_singup {
+  padding: 50px;
+  height: 100%;
+}
+
+/* Rest of your CSS */
+
+.input_row_signup {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 50px;
+  margin-bottom: 50px;
+}
+
+.input_container_signup {
+  width: 50%;
+  position: relative;
+}
+
+.input_box_singup {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid dotted;
+  padding: 16px 12px;
+}
+
+.error_message_signup {
+  position: absolute;
+  top: 55px;
+  font-size: 14px;
+  padding-left: 4px;
+  left: 0;
+  color: rgb(241, 32, 32);
+}
+
+.submit_container_signup {
+  width: 100%;
+  color: black;
+  text-align: center;
+  background-color: var(--accent-color-dark);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.logo_Container_signup {
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo_Container_signup > img {
+  width: 400px;
+}
+
+#submit_container_signup > button {
+  width: 100%;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+#submit {
+  background-color: var(--clr-pumpkin) !important;
+  width: 100%;
+  color: #fff;
+  cursor: pointer;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+}
+@media screen and (max-width: 1076px) {
+  .signupContainer {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 586px) {
+  .input_row_signup {
+    display: flex;
+    flex-direction: column;
+  }
+  .input_container_signup {
+    width: 100%;
+  }
+}

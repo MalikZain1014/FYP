@@ -1,0 +1,83 @@
+.carousel_container {
+  position: relative;
+}
+.carousel-slide {
+  position: relative;
+  height: 750px;
+}
+.carousel-slide::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 70%; /* Adjust this value as needed */
+  height: 100%;
+  background: linear-gradient(to right, var(--clr-primary), transparent);
+  z-index: 0;
+}
+.carousel-content {
+  position: absolute;
+  top: 0;
+  left: 200px;
+  bottom: 0;
+  height: fit-content;
+  padding: 30px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.carousel-slide > img {
+  width: 100%;
+  object-fit: cover;
+  background-size: cover;
+  height: 100%;
+}
+.carousel-content > h2 {
+  font-size: 3rem; /* Adjust font size as needed */
+  color: white;
+  margin-top: 1rem; /* Adjust spacing as needed */
+  margin-bottom: 1rem; /* Adjust spacing as needed */
+  text-align: center; /* Center the heading */
+}
+
+.carousel-content > p {
+  color: white;
+  font-size: 1rem; /* Adjust font size as needed */
+  line-height: 1.5; /* Adjust line height as needed */
+  text-align: center; /* Center the paragraph */
+}
+
+.carousel-content > button {
+  background-color: white;
+  padding: 1rem 3rem;
+  border: none;
+  height: 50px;
+  border-left: 8px solid var(--clr-pumpkin);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+  font-weight: bold; /* Change to a valid font weight value */
+  transition: background-color 0.3s ease, color 0.3s ease,
+    border-color 0.3s ease;
+  color: black;
+  font-size: 1rem; /* Adjust font size as needed */
+}
+
+.carousel-content > button:hover {
+  background-color: var(--clr-green);
+  color: white;
+  border-left: 8px solid var(--clr-green);
+}
+
+@media screen and (max-width: 786px) {
+  .carousel-content {
+    left: 0;
+  }
+  .carousel-content > h2 {
+    font-size: 1.5rem;
+    white-space: pre-wrap;
+  }
+}

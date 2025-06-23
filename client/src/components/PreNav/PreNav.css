@@ -1,0 +1,57 @@
+.outerPreNavContainer {
+  background-color: var(--clr-primary);
+  color: var(--clr-white);
+}
+.prenavContainer {
+  max-width: 1250px;
+  margin: 0px auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.leftpre {
+  display: flex;
+  align-items: center;
+}
+.leftpre > div {
+  display: flex;
+  align-items: center;
+  margin-right: 30px;
+}
+.rightpre {
+}
+.rightpre > ul {
+  display: flex;
+  align-items: center;
+}
+.rightpre > ul > li {
+  margin-right: 10px;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  padding-left: 20px;
+  padding-right: 20px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+}
+.rightpre > ul > li:hover{
+    color: var(--clr-silver);
+}
+.myPreIcon {
+  font-size: 14px;
+  margin-right: 10px;
+}
+.rightpre > ul > li:last-child {
+  background-color: #fe6c00;
+  transition: all 0.5s ease;
+}
+.rightpre > ul > li:last-child:hover{
+    background-color: var(--clr-green);
+}
+
+@media screen and (max-width:1246px) {
+    .outerPreNavContainer{
+        display: none;
+    }
+}

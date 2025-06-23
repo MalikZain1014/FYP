@@ -1,0 +1,193 @@
+/* Basic styling */
+
+.outerNavContainer {
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 99;
+  background-color: #fff;
+}
+
+.navbar {
+  margin: 0px auto;
+  max-width: 1250px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  background-color: #fff;
+  position: relative;
+}
+
+.navbar-logo img {
+  width: 100%;
+  height: 40px;
+  margin-right: 0.5rem;
+}
+
+.navbar-links {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-link {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+}
+
+.navbar-link:hover {
+  color: var(--clr-pumpkin);
+}
+
+/* Add the following rules for the dropdown menu */
+
+.navbar-link:hover .hoveritemsContainer {
+  display: block;
+}
+
+.hoveritemsContainer {
+  display: none;
+  position: absolute;
+  top: 20px;
+  padding: 10px;
+  width: 150px;
+  left: 0;
+  background-color: #f7f7f7;
+  border: 1px solid #ddd;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 1000; /* Ensure the dropdown is above other elements */
+  color: #333;
+}
+.myLiLink{
+  color: #333 !important;
+}
+.hoveritemsContainer ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.hoveritemsContainer li {
+  padding-bottom: 10px;
+  font-size: 15px;
+}
+.activeRoute {
+  border-bottom: 3px solid var(--clr-pumpkin);
+}
+.navbar-search {
+  cursor: pointer;
+  font-size: 12px;
+}
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 300px;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: #fff;
+  padding: 2rem;
+  transition: right 0.3s ease-in-out;
+}
+
+.mobile-nav.open {
+  right: 0;
+}
+.menuIcon {
+  color: #333;
+  font-size: 18px;
+}
+.close-icon {
+  cursor: pointer;
+  text-align: right;
+  margin-bottom: 2rem;
+}
+.closeIcon {
+  color: white;
+}
+.mobile-nav-list {
+  list-style: none;
+  padding: 0;
+}
+
+.mobile-nav-list li {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+}
+
+/* Mobile Nav Open */
+.open .mobile-nav {
+  transform: translateX(0);
+}
+
+/* Mobile Nav Closed */
+.mobile-nav.closed {
+  right: -300px;
+  transition: transform 0.3s ease-in-out;
+}
+/* Responsive Styling */
+/* Responsive Styling */
+@media (max-width: 368px) {
+  .navbar-logo img {
+    width: 240px;
+    border: 1px solid red;
+  }
+}
+@media (max-width: 568px) {
+  .navbar-logo img {
+    width: 280px;
+  }
+}
+@media (max-width: 768px) {
+  .navbar-links {
+    display: none;
+  }
+
+  .mobile-nav.open {
+    right: 0;
+  }
+
+  .mobile-nav-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+
+  .menuIcon {
+    margin-right: 1rem;
+  }
+
+  .close-icon {
+    cursor: pointer;
+    margin-bottom: 1rem;
+    text-align: right;
+  }
+
+  .mobile-nav-list {
+    list-style: none;
+    padding: 0;
+  }
+
+  .mobile-nav-list li {
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+  }
+  .navbar {
+    max-width: 100%;
+  }
+}
+
+/* Rest of your existing CSS for larger screens */
+
+/* Rest of your existing CSS for larger screens */
+@media (min-width: 769px) {
+  .menuIcon {
+    display: none;
+  }
+}

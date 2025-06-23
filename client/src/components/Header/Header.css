@@ -1,0 +1,54 @@
+.generalHeader {
+    background: url("https://images.unsplash.com/photo-1543505298-b8be9b52a21a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80");
+    text-align: center;
+    object-fit: cover;
+    width: 100%;
+    height: 450px;
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
+    overflow: hidden;
+    border-radius: 0 0 85% 85% / 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .generalHeader .overlay_general {
+    width: 100%;
+    height: fit-content;
+    padding: 50px;
+    color: #fff;
+    text-shadow: 1px 1px 1px #333;
+  }
+  
+  h1 {
+    font-family: "Dancing Script", cursive;
+    font-size: 50px;
+    color: #e6870b;
+    margin-bottom: 30px;
+  }
+  
+  h3,
+  .overlay_general p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 30px;
+    color: #333;
+    font-size: 30px;
+  }
+  
+  button {
+    border: none;
+    outline: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    height: 40px;
+    color: #333;
+    background: #fff;
+    margin-bottom: 50px;
+    box-shadow: 0 3px 20px 0 #0000003b;
+  }
+  button:hover {
+    cursor: pointer;
+  }
+  

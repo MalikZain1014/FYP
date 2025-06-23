@@ -1,0 +1,29 @@
+.innerBlogGridContainer {
+  max-width: 1350px;
+  margin: 50px auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+}
+.blogDiv {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1178px) {
+  .innerBlogGridContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 786px) {
+  .innerBlogGridContainer {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .blogDiv {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
