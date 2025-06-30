@@ -1,6 +1,6 @@
 # University Admission Chatbot System
 
-![Chatbot Screenshot](./client/public/chatbot.png)
+![Chatbot Screenshot](./client/public/Screenshot.png)
 
 This is a full-stack web application built using the MERN stack (MongoDB, Express.js, React.js, Node.js). It features a chatbot that helps users interact with the university's admission system in a conversational way.
 
