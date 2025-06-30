@@ -10,7 +10,6 @@
 .outContaierTeam > h1 {
   padding: 30px 0px;
   font-size: 50px;
-
 }
 .TeamContainer {
   position: relative;
@@ -40,6 +39,7 @@
 
 .imgBox {
   position: absolute;
+  border-radius: 20px;
   top: 0;
   left: 0;
   width: 100%;
@@ -49,6 +49,7 @@
 }
 
 .imgBox img {
+  border-radius: 20px;
   width: 20rem;
   height: 20rem;
   object-fit: cover;
@@ -57,6 +58,7 @@
 
 .content {
   position: absolute;
+  border-radius: 20px;
   top: 0;
   left: 0;
   width: 100%;

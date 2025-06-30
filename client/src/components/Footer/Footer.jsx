@@ -11,7 +11,7 @@ const Footer = () => {
         <h2>Address</h2>
 
         <address>
-          Box 35300 1810 Campus Way NE Bothell, WA 98011-8246
+          2 KM Multan Road Renala Khurd Bypass, Okara
           <br />
           <Link to="/contactus" className="footer__btn">
             Contact Us
@@ -106,7 +106,7 @@ const Footer = () => {
       </ul>
 
       <div className="legal">
-        <p>&copy; 2023 Something. All rights reserved.</p>
+        <p>&copy; 2025 Something. All rights reserved.</p>
 
         <div className="legal__links">
           <span>

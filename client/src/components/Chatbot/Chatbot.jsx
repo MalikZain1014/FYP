@@ -14,8 +14,8 @@ const Chatbot = () => {
   const [input, setInput] = useState("");
   const [suggestions, setSuggestions] = useState([]);
   const [isTyping, setIsTyping] = useState(false);
-  const [userAvatar] = useState("https://i.pravatar.cc/150?img=3");
-  const [botAvatar] = useState("https://i.pravatar.cc/150?img=5");
+  const [userAvatar] = useState("/student.png");
+  const [botAvatar] = useState("/chatbot.jpg");
   const messagesEndRef = useRef(null);
 
   // Toggle chatbox visibility
